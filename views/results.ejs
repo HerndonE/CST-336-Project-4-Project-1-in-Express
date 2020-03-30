@@ -1,0 +1,76 @@
+<%- include ('templates/header'); -%>
+
+	<head>
+	    <link rel="stylesheet" type ="text/css" href="app.css">
+<style>
+
+main{
+    color: white;
+}
+body  {
+  background-image: url("img/bandw.jpg");
+  background-repeat: repeat;
+  background-size: 100%;
+  opacity: 1.0;
+}
+
+         </style>
+        <meta charset="utf-8"/>
+        <title>Sega Genesis Search Results</title>
+         <link rel="stylesheet" type ="text/css" href="app.css">
+	</head>
+
+<div class="jumbotron">
+	<body>
+	     
+        <header>
+            <div id="content2">
+            <left>
+                <img src ="img/sonic.png" alt="Sonic" style="max-width:10%;" class="ribbon" />
+            </left>
+            </div>
+            <div id="content3">
+            <right>
+                <img src ="img/sonic1.png" alt="Sonic" style="max-width:10%;" class="ribbon" />
+            </right>
+            </div>
+            <center>
+            <h1 class = "title">The Sega Genesis</h1>
+            </center>
+        </header>
+        <nav>
+            <center>
+            <hr width="50%" />
+            <a href = "/">Home</a>
+            <a href = "/spec">Specifications</a>
+            <a href = "/impact">Impact</a>
+            <a href = "/reference">Reference</a>
+            <a href = "/search"><u>Search</u></a>
+            </center>
+        </nav>
+        <main>
+             <br/><br /><br />
+        <center> 
+       <h1> Video Game Search RESULTS </h1>
+		 <button class='btn btn-info' onclick='location.href="/search";'>Search Again</button>
+		</center>    
+            <br/><br /><br />
+            
+        <ul id='movies-list'>
+         <% data.Search.forEach(function(game){%>
+	        <li> 
+	            
+	            <div>
+                    
+                    <p>Name: <%=game.query%></p>
+                </div>
+	        </li>	
+        <% }); %>
+    <ul>
+   
+            
+           
+            
+        </main>
+
+<%- include ('templates/footer'); -%>

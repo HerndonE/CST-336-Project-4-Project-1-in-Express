@@ -1,0 +1,89 @@
+<%- include ('templates/header'); -%>
+
+	<head>
+	       <link rel="stylesheet" type ="text/css" href="app.css">
+<style>
+
+main{
+    color: white;
+    background-image: url("img/specgenesis.jpg");
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position:center bottom;
+    opacity: 1.0;
+    
+}
+
+body  {
+  background-image: url("img/bandw.jpg");
+  background-repeat: repeat;
+  background-size: 100%;
+  opacity: 1.0;
+}
+
+.title{ 
+    color: red; 
+}
+
+      </style>
+        <meta charset="utf-8" />
+        <title>Sega Genesis Specifications</title>
+          <link rel="stylesheet" type ="text/css" href="app.css">
+	</head>
+
+<div class="jumbotron">
+	<body>
+	     
+        <header>
+            <div id="content2">
+            <left>
+                <img src ="img/sonic.png" alt="Sonic" style="max-width:10%;" class="ribbon" />
+            </left>
+            </div>
+            <div id="content3">
+            <right>
+                <img src ="img/sonic1.png" alt="Sonic" style="max-width:10%;" class="ribbon" />
+            </right>
+            </div>
+            <center>
+            <h1 class = "title">The Sega Genesis</h1>
+            </center>
+        </header>
+        <nav>
+            <center>
+            <hr width="50%" />
+            
+            <a href = "/">Home</a>
+            <a href = "/spec"><u>Specifications</u></a>
+            <a href = "/impact">Impact</a>
+            <a href = "/reference">Reference</a>
+            <a href = "/search">Search</a>
+            
+            </center>
+        </nav>
+        <main>
+             <br/><br /><br />
+        <p><strong>Sega Mega Drive/Genesis Technical Specifications</strong>
+        <div class = 'gray'>
+        <li><strong class = "title">CPU:</strong> 16-bit Motorola 68000 running at 7.61 MHz</li>
+        <li><strong class = "title">Co-processor:</strong> Zilog Z80 running at 4 MHz (Not Present in model MK-1631) controls PSG (Programmable Sound Generator) & FM Chips</li>
+        <li><strong class = "title">RAM:</strong> 64 Kbytes</li>
+        <li><strong class = "title">ROM:</strong> 1 Mbytes (8-Mbit)</li>
+        <li><strong class = "title">VRAM:</strong> 64 Kbytes (Video Ram)</li>
+        <li><strong class = "title">Graphics:</strong> VDP (Video Display Processor) dedicated video display processor for playfield and sprite control, 3 Planes, 2 scrolling playfields, 1 sprite plane</li>
+        <li><strong class = "title">Colours Available:</strong> 512</li>
+        <li><strong class = "title">Max. Colours on screen:</strong> 64</li>
+        <li><strong class = "title">CRAM:</strong> 64 x 9-kbit (Colour RAM)</li>
+        <li><strong class = "title">Pixel Resolution:</strong> 320 x 224, 40 x 28 text display mode</li>
+        <li><strong class = "title">Sound:</strong> Texas Instruments PSG (Programmable Sound Generator) TI 76489 chip, Yamaha YM 2612 FM chip</li>
+        <li><strong class = "title">Signal/Noise Ratio:</strong> 14dB</li>
+        <li><strong class = "title">Sound Channels:</strong> 6 stereo sound channels</li>
+        <li><strong class = "title">Sound RAM:</strong> 8 Kbytes</li>
+        <li>1 sidecar expansion slot</li>
+        <li>1 cartridge port</li>
+        <li>2 joystick ports</li>
+        <li>AV port</li></p></div>
+        </main>
+
+
+<%- include ('templates/footer'); -%>
