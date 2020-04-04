@@ -35,7 +35,7 @@ app.get('/results', function(req, res){
 //a3332e26ab961dcd71f9a96fb27cf7a1
 //https://api-v3.igdb.com
 
-
+/*
 var query = req.query.search;
 var options = {
   method: 'GET',
@@ -57,21 +57,18 @@ request(options, function(error, response, dataStream){
 	    
 	});
 
+*/
 
-/*
 var query = req.query.search;
-	var url = 'https://openlibrary.org/api/books?bibkeys=ISBN:' + query + '&format=json&jscmd=data';
+	var url = 'http://www.omdbapi.com/?apikey=thewdb&s=' + query;
 	request(url, function(error, response, dataStream){
 		if (!error && response.statusCode == 200){
 			var data = JSON.parse(dataStream);
-			console.log('data=',data);
-			res.render('results', {data:data, query:query});
-		}//Use ISBN numbers 0451526538 and 1594200092 to see the magic!
-	
-	    console.log(dataStream);
-	    
+			//console.log('data=',data);
+			res.render('results', {data: data});
+		}
 	});
-	*/
+
 	
 });
 

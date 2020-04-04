@@ -49,28 +49,26 @@ body  {
             </center>
         </nav>
         <main>
-             <br/><br /><br />
+             
         <center> 
-       <h1> Video Game Search RESULTS </h1>
+        <br/><br /><br />
+       <h1> Video Game Search Movie RESULTS </h1>
 		 <button class='btn btn-info' onclick='location.href="/search";'>Search Again</button>
-		</center>    
-            <br/><br /><br />
-            
-        <ul id='movies-list'>
-         <% data.Search.forEach(function(game){%>
+		   </center> 
+		   <center>
+                <ul id='movies-list'>
+        <% data.Search.forEach(function(movie){ %>
 	        <li> 
-	            
+	            <img class='poster' src=<%=movie.Poster%> />
 	            <div>
-                    
-                    <p>Name: <%=game.query%></p>
+                    <h5><%=movie.Title%></h5>
+                    <p><%=movie.Year%></p>
                 </div>
 	        </li>	
         <% }); %>
     <ul>
-   
-            
-           
-            
+</center>
+       <br/><br /><br />
         </main>
 
 <%- include ('templates/footer'); -%>
